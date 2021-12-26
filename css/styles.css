@@ -1,0 +1,361 @@
+:root {
+	--primary-text-color: #000000;
+	--primary-background-color: #ffffff;
+	--accent-color: #2196f3;
+	--color-text-title: #212121;
+	--web-color-logo: #2196f3;
+	--color-text-name: #212121;
+	--color-team-position: #757575;
+	/* portfolio */
+	--background-button-color: #F5F4FA;
+	--color-btn-portfolio: #212121;
+	--background-button-color-active: #2196F3;
+	--color-btn-portfolio-activ: #FFFFFF;
+	--service-title-color: #212121;
+	--service-text-color: #757575;
+	}
+
+	/* ----------Reset---------- */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+	/*---------------Basic Settings--------------- */
+	body {
+		font-family: Roboto, sans-serif;
+		background-color: var(--primary-background-color);
+		color: var(--primary-text-color);
+	}
+	.nav-list .link.current{
+		color: #2196f3; 
+	}
+	/*----------Padding для удобства нажимания ссылок----------  */
+	.no-link {
+	  text-decoration: none;
+	  display: block;
+	  padding-top: 15px;
+	  padding-bottom: 15px;
+	}
+	
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+		width: 1200px;
+		/* margin: 0 auto; */
+		margin-left: auto;
+		margin-right: auto;
+		outline: 1px solid red;
+
+	}
+
+	/*---------------Header---------------*/
+	.header{
+	background-color: #ffffff;
+	border-bottom: 1px solid #ECECEC;
+	}
+	.header-container {
+		display: flex;
+		align-items: center;
+		padding-top: 24px;
+  		padding-bottom: 25px;
+
+	}
+	
+	.nav{
+	display: flex;
+	align-items: center;
+	}
+	
+	.logo{
+	color: var(--primary-text-color);
+	 font-family: Raleway, sans-serif;
+	 font-size: 26px;
+	 font-weight: 700;
+	 line-height: 1.2;
+	 margin-right: 93px;
+	}
+
+	.logo-web{
+	color: var(--web-color-logo);
+	}
+
+	.list{
+	  list-style: none;
+	  }
+	
+	  /*---------------navigation---------------*/
+	 .nav-list{
+	 display: flex;
+	 }
+	
+	 .nav-list .link{
+	  font-weight: 500;
+	  font-size: 14px;
+	  line-height: 1.14;
+	  letter-spacing: 0.02em;
+	  color: #212121;
+	 }
+	
+	.nav-list .link:hover, 
+	.nav-list .link:focus {
+		 color: var(--accent-color);
+	 } 
+
+	 .nav-list-item:not(:last-child) {
+		margin-right: 50px;
+	 }
+		 
+	 
+
+
+	/*---------------Контакты---------------*/
+	.header-contact .link{
+	  font-weight: 500;
+	  font-size: 14px;
+	  line-height: 1.14;
+	  letter-spacing: 0.02em;
+	  color: #757575;
+	  
+	 }
+	
+	.header-contact .link:hover, 
+	.header-contact .link:focus {
+		 color: var(--accent-color);
+	 } 
+	 .head-contact {
+		margin-left: auto;
+	 }
+	 .header-contact {
+		 display: flex;
+	 }
+	 .header-contact-item:not(:last-child) {
+			margin-right: 50px;
+		 }
+	 
+
+
+	 /*---------------Банер с кнопкой---------------*/
+	
+	 .hero {
+		 background-color: #2f303a;
+	 }
+	
+	 .hero-title {
+	  font-weight: 900;
+	  font-size: 44px;
+	  line-height: 1.36;
+	  letter-spacing: 0.06em;
+	  text-transform: uppercase;
+	  text-align: center;
+	  color: #ffffff;
+	 }
+	
+	.button {
+	  color: #ffffff;
+	  background-color: #2196f3;
+	  font-family: inherit;
+	  font-weight: 700;
+	  font-size: 16px;
+	  line-height: 1.88;
+	  letter-spacing: 0.06em;
+	  cursor: pointer;
+	}
+	
+	.button:hover,
+	.button:focus {
+	 background-color:#188CE8;
+	}
+	/*---------------Качества в работе---------------*/
+	.quality{
+		
+	}
+	
+	/* .quality-list{} */
+	
+	.quality-title {
+	  font-weight: 700;
+	  font-size: 14px;
+	  line-height: 1.14;
+	  letter-spacing: 0.03em;
+	  text-transform: uppercase;
+	  color: var(--color-text-title);
+	}
+	
+	.quality-text {
+	  font-size: 14px;
+	  line-height: 1.71;
+	  letter-spacing: 0.03em;
+	  color: #757575;
+	}
+	
+	/*---------------Чем занимаемся---------------*/
+	
+	/* .main-work {} */
+	
+	.main-work-title {
+	 font-weight: 700;
+	  font-size: 36px;
+	  line-height: 1.17;
+	  text-align: center; 
+	  letter-spacing: 0.03em;
+	  color: var(--color-text-title);
+	}
+	
+	/* .main-work-list{ }*/
+	
+	
+	
+	/*---------------Наша Команда---------------*/
+	
+	.team { 
+		background-color:  #F5F4FA;
+	}
+
+	.team-title{
+		font-weight: 700;
+	  font-size: 36px;
+	  line-height: 1.17;
+	  text-align: center; 
+	  letter-spacing: 0.03em;
+	  color: var(--color-text-title);
+	}
+
+	.team-list {
+
+	}
+
+	.team-people {
+		background-color: #ffffff;
+	}
+
+	.team-name {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.27;
+		letter-spacing: 0.03em;
+		color: var(--color-text-name);
+	}
+
+	.team-position {
+		font-size: 16px;
+  		line-height: 1.27;
+  		letter-spacing: 0.03em;
+		color: var(--color-team-position);
+	}
+
+	/*---------------Футер---------------*/
+
+	.footer {
+		background-color: #2f303a;
+  		color: #ffffff;
+	}
+
+	.logo-footer {
+	 font-family: Raleway, sans-serif;
+	 font-size: 26px;
+	 font-weight: 700;
+	 line-height: 1.2;
+	 color: #ffffff;
+	}
+
+	.address {
+		font-style: normal;
+	}
+
+	.address-list {
+
+	}
+
+	.adress-map {
+		font-size: 14px;
+		line-height: 1.71;
+		letter-spacing: 0.03em;
+		color: #ffffff;
+	}
+
+	.adress-map:hover,
+	.adress-map:focus {
+		color: var(--accent-color);
+	}
+
+	.adress-list .link {
+		font-size: 14px;
+		line-height: 1.71;
+		letter-spacing: 0.03em;
+		color: rgba(255, 255, 255, 0.6);
+	}
+
+	.adress-list .link:hover,
+	.adress-list .link:focus {
+		color: var(--accent-color);
+	}
+
+	/* -------------------PORTFOLIO------------------- */
+	/* ---------Фильтр--------- */
+	.filter-button-service {
+		background-color: #FFFFFF;
+	}
+
+	.filter-button-list {
+
+	}
+
+	.btn-filter {
+		font-family: inherit;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.62;
+		/* text-align: center; */
+		letter-spacing: 0.03em;
+		color: var(--color-btn-portfolio);
+		background-color: var(--background-button-color);
+		cursor: pointer;
+	}
+
+	.btn-filter:hover,
+	.btn-filter:focus {
+		color: var(--color-btn-portfolio-activ);
+		background-color: var(--background-button-color-active);
+	}
+			/*----------Сетка услуг----------*/
+
+	.service-network {
+		background-color: #FFFFFF;
+	}
+
+	.service-network-list {
+
+	}
+
+	.service-title {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 2;
+		letter-spacing: 0.06em;
+		color: var(--service-title-color);
+	}
+
+	.service-text{
+		font-size: 16px;
+  		line-height: 1.87;
+  		letter-spacing: 0.03em;
+  		color: var(--service-text-color);
+
+	}
